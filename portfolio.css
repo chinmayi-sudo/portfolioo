@@ -1,0 +1,241 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f3f4f6, #e5e7eb);
+  color: #1f2937;
+  min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+header {
+  background-color: hsl(158, 19%, 41%);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #6e8619;
+}
+
+nav h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.7rem;
+  color: #ebe5e5;
+  margin-bottom: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #dde2e9;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #70cf1d;
+}
+
+/* ================= HERO SECTION ================= */
+#hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: #1e1e4d;
+}
+
+#hero h2 {
+  font-size: 2.8rem;
+  font-family: 'Playfair Display', serif;
+  color: #cdccdb;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  max-width: 650px;
+  margin: 0 auto;
+  color: #939dac;
+}
+
+/* ================= ABOUT SECTION ================= */
+#about {
+  background: #5fcaf4;
+  padding: 60px 70px;
+  text-align: center;
+  color: #020116;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+#about p {
+  max-width: 600px;
+  font-size: 1.1rem;
+}
+
+/* ================= SKILLS SECTION ================= */
+#skills {
+  background: #05011a;
+  padding: 60px 20px;
+  text-align: center;
+  color: #241b9b;
+}
+
+.skill-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.skill-list li {
+  background-color: #fff;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  color: #4338ca;
+  transition: 0.3s;
+}
+
+.skill-list li:hover {
+  background-color: #8958b7;
+  color: #fff;
+}
+
+/* ================= EDUCATION SECTION ================= */
+#education {
+  background: #ba9c26;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#education p {
+  color: #78350f;
+  font-size: 1.1rem;
+}
+
+/* ================= CONTACT SECTION ================= */
+#contact {
+  background-color: #4f46e5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #fff;
+}
+
+#contactForm {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+#contactForm button {
+  padding: 12px;
+  background-color: #fec260;
+  color: #1f1d36;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contactForm button:hover {
+  background-color: #ffd580;
+}
+
+/* ================= SLIDER SECTION ================= */
+#slider {
+  background: #312e81;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.slide {
+  font-size: 1.1rem;
+  display: none;
+  color: #fff;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slider-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fec260;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-btn.left {
+  left: 10px;
+}
+
+slider-btn.right {
+  right: 10px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #1f2937;
+  color: #d1d5db;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
